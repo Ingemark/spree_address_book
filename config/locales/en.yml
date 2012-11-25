@@ -4,6 +4,8 @@
 en:
   other_address: "Other address"
   add_new_shipping_address: "Add new shipping address"
+  add_new_address: "Add new address"
+  addresses: "My Addresses"
   new_shipping_address: "New Shipping Address"
   edit_shipping_address: "Edit Shipping Address"
   no_shipping_addresses_on_file: "No shipping addresses on file"

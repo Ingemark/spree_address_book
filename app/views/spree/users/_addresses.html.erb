@@ -1,4 +1,4 @@
-<h3><%= t(:shipping_addresses) %></h3>
+<h3><%= t(:addresses) %></h3>
 <% if spree_current_user.addresses.present? %>
 <table id="user_addresses">
   <tbody>
@@ -6,8 +6,8 @@
     <tr class="<%= cycle('even', 'odd') %>">
       <td><%= address %></td>
       <td>
-        <%= link_to t(:edit), edit_address_path(address) %>&nbsp;
-        <%= link_to t(:remove), address_path(address), :method => :delete, :confirm => t(:are_you_sure) %>
+        <%= link_to t(:edit), spree.edit_address_path(address) %>&nbsp;
+        <%= link_to t(:remove), spree.address_path(address), :method => :delete, :confirm => t(:are_you_sure) %>
       </td>
     </tr>
     <% end %>
