@@ -31,6 +31,7 @@ class Spree::AddressesController < Spree::BaseController
     else
       @address.update_attribute(:deleted_at, Time.now)
       @address = Spree::Address.new(params[:address])
+      @address.user = current_spree_user
     end
     
     if @address.save
